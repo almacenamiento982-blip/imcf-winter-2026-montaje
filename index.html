@@ -83,7 +83,7 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
   <h1>Inter Miami CF <b>Winter Camp 2026</b> · archivos y textos</h1>
   <p>Para montar los anuncios en Meta: descarga cada archivo y copia cada texto con un clic · 10 anuncios, en inglés y español</p>
 </div></header>
-<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#publico">Instagram y público</a><a href="#comunes">Datos comunes</a></div></nav>
+<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#publico">Instagram y público</a><a href="#rtg">RTG (opcional)</a><a href="#comunes">Datos comunes</a></div></nav>
 <main>
 
 <h2 id="pixel">Primero: revisar el píxel</h2>
@@ -140,6 +140,32 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
 <p class="sub">En el orden del montaje. Cada texto se pega tal cual, con sus emojis y saltos de línea. Marca "Montado" al terminar cada uno.</p>
 <div id="ads"></div>
 
+<h2 id="rtg">Opcional · conjunto RTG</h2>
+<p class="sub">Solo si Alessandro lo aprueba. Si no, esta sección se ignora.</p>
+<div class="pasos">
+  <p style="margin:0 0 6px"><b>Importante:</b> si va el RTG, el presupuesto se pone en cada conjunto y no en la campaña: <b>USD 15</b> en el conjunto BROAD y <b>USD 5</b> en el RTG. El BROAD excluye los dos primeros públicos de abajo.</p>
+  <p style="margin:12px 0 0"><b>1. Crear los públicos</b> en Públicos (Audiences) → Crear público → Público personalizado:</p>
+  <ol>
+    <li><b>Visitantes de la web:</b> Sitio web · conjunto de datos 662187043089834 · Todos los visitantes del sitio web · 60 días.
+      <div class="enlace"><code>IMCF | WEB VISITORS | 60D</code><button class="copiar" type="button" data-copia="IMCF | WEB VISITORS | 60D">Copiar</button></div></li>
+    <li><b>Registrados</b> (solo si en el píxel apareció Cliente potencial): Sitio web · Eventos: Cliente potencial · 30 días.
+      <div class="enlace"><code>IMCF | WEB LEAD | 30D</code><button class="copiar" type="button" data-copia="IMCF | WEB LEAD | 30D">Copiar</button></div></li>
+    <li><b>Compradores</b> (solo si apareció Comprar): Sitio web · Eventos: Comprar · 60 días.
+      <div class="enlace"><code>IMCF | WEB PURCHASE | 60D</code><button class="copiar" type="button" data-copia="IMCF | WEB PURCHASE | 60D">Copiar</button></div></li>
+  </ol>
+  <p style="margin:12px 0 0"><b>2. Crear el conjunto en la misma campaña</b> (no duplicar el BROAD):</p>
+  <ol>
+    <li><b>Nombre:</b> <span class="enlace" style="display:inline-flex"><code>FTL | RTG | IG365 + WEB60</code><button class="copiar" type="button" data-copia="FTL | RTG | IG365 + WEB60">Copiar</button></span></li>
+    <li><b>Conversión:</b> igual que el BROAD (Sitio web · Maximizar conversiones · Cliente potencial).</li>
+    <li><b>Presupuesto:</b> diario USD 5 · fin 26 dic 2026, 11:59 pm.</li>
+    <li><b>Público:</b> usar las opciones de público originales (sin Advantage+). Incluir IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D, IMCF | WEB VISITORS | 60D y IMCF | WEB LEAD | 30D (si existe). Excluir IMCF | WEB PURCHASE | 60D (si existe).</li>
+    <li><b>Lugar:</b> 1350 NW 55th St, Fort Lauderdale + 40 mi · Edad 18–65 · sin segmentación detallada.</li>
+    <li><b>Ubicaciones:</b> manuales, solo Facebook e Instagram.</li>
+    <li><b>Anuncios:</b> los 6 de abajo, con el mismo enlace, botón y mejoras apagadas que los otros.</li>
+  </ol>
+</div>
+<div id="adsRtg"></div>
+
 <footer>Página de trabajo · no aparece en buscadores.</footer>
 </main>
 <div id="zoom"><img alt=""></div>
@@ -193,7 +219,73 @@ const campo = (es, en, t) => `<div class="campo"><div class="cab"><b>${es} <em>�
 
 document.getElementById('datos').innerHTML = COMUNES.map(([es, en, v]) => `<div class="dato"><b>${es}<em>${en}</em></b><span>${esc(v)}</span>${btnCopiar(v.replace(' (Registrarte)', ''))}</div>`).join('');
 document.getElementById('menu').insertAdjacentHTML('beforeend', ADS.map(a => `<a href="#ad${a.n}" data-n="${a.n}">${a.n} · ${a.cre} ${a.idi}</a>`).join(''));
-document.getElementById('ads').innerHTML = ADS.map(a => {
+const RTG_ADS = [
+ {
+  "n": "R01",
+  "idi": "EN",
+  "cre": "RTG VIDEO",
+  "arch": "01_VIDEO_EN.mp4",
+  "port": "01_VIDEO_EN_portada.jpg",
+  "vista": "01_VIDEO_EN_vista.mp4",
+  "utm": "rtg_video_en",
+  "txt": "This is where they'll train this winter ⚽💗\n4 days at the Florida Blue Training Center with official Inter Miami CF coaches.\n📅 Dec 27–30 · 8:30 am – 12:30 pm · Fort Lauderdale\n👦👧 Boys & girls 6–16\nPayment options at checkout. Register now 👇",
+  "tit": "Train where Inter Miami trains",
+  "des": "Payment options at checkout"
+ },
+ {
+  "n": "R02",
+  "idi": "ES",
+  "cre": "RTG VIDEO",
+  "arch": "02_VIDEO_ES.mp4",
+  "port": "02_VIDEO_ES_portada.jpg",
+  "vista": "02_VIDEO_ES_vista.mp4",
+  "utm": "rtg_video_es",
+  "txt": "Aquí es donde va a entrenar este invierno ⚽💗\n4 días en el Florida Blue Training Center con entrenadores oficiales de Inter Miami CF.\n📅 27–30 de diciembre · 8:30 am – 12:30 pm · Fort Lauderdale\n👦👧 Niños y niñas de 6 a 16 años\nPago en cuotas al inscribirse. Inscríbelo aquí 👇",
+  "tit": "Entrena donde entrena Inter Miami",
+  "des": "Pago en cuotas al inscribirse"
+ },
+ {
+  "n": "R03",
+  "idi": "EN",
+  "cre": "RTG HERO",
+  "arch": "03_HERO_EN.jpg",
+  "utm": "rtg_hero_en",
+  "txt": "Still thinking about Winter Camp? ⚽💗\n4 days with official Inter Miami CF coaches, right after Christmas.\n📅 Dec 27–30 · Florida Blue Training Center, Fort Lauderdale\n👦👧 Boys & girls 6–16 · kit, hoodie and hat included\nPayment options at checkout. Register today 👇",
+  "tit": "Still thinking? Dec 27–30 in Fort Lauderdale",
+  "des": "Payment options at checkout"
+ },
+ {
+  "n": "R04",
+  "idi": "ES",
+  "cre": "RTG HERO",
+  "arch": "04_HERO_ES.jpg",
+  "utm": "rtg_hero_es",
+  "txt": "¿Todavía lo estás pensando? ⚽💗\n4 días con entrenadores oficiales de Inter Miami CF, justo después de Navidad.\n📅 27–30 de diciembre · Florida Blue Training Center, Fort Lauderdale\n👦👧 Niños y niñas de 6 a 16 años · incluye kit, hoodie y gorra\nPago en cuotas al inscribirse. Inscríbelo hoy 👇",
+  "tit": "¿Lo sigues pensando? 27–30 dic en Fort Lauderdale",
+  "des": "Pago en cuotas al inscribirse"
+ },
+ {
+  "n": "R05",
+  "idi": "EN",
+  "cre": "RTG BEST GIFT",
+  "arch": "07_BEST_GIFT_EN.jpg",
+  "utm": "rtg_best_gift_en",
+  "txt": "Christmas is almost here 🎁⚽\nGive them 4 days of real Inter Miami CF training with official Inter Miami CF coaches.\n📅 Dec 27–30 · Florida Blue Training Center, Fort Lauderdale\n👦👧 Ages 6–16 · kit, hoodie and hat included\nPayment options at checkout. Register now 👇",
+  "tit": "The gift they'll remember",
+  "des": "Dec 27–30 · Ages 6–16"
+ },
+ {
+  "n": "R06",
+  "idi": "ES",
+  "cre": "RTG BEST GIFT",
+  "arch": "08_BEST_GIFT_ES.jpg",
+  "utm": "rtg_best_gift_es",
+  "txt": "La Navidad ya casi llega 🎁⚽\nRegálale 4 días de entrenamiento real de Inter Miami CF con entrenadores oficiales de Inter Miami CF.\n📅 27–30 de diciembre · Florida Blue Training Center, Fort Lauderdale\n👦👧 De 6 a 16 años · incluye kit, hoodie y gorra\nPago en cuotas al inscribirse. Inscríbelo aquí 👇",
+  "tit": "El regalo que va a recordar",
+  "des": "27–30 dic · 6 a 16 años"
+ }
+];
+const pintarAds = lista => lista.map(a => {
   const nombre = `${a.n} | ${a.cre} | ${a.idi}`;
   const utm = 'utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=' + a.utm;
   const media = a.vista
@@ -214,6 +306,8 @@ document.getElementById('ads').innerHTML = ADS.map(a => {
     <label class="listo"><input type="checkbox"> Montado</label>
   </div></article>`;
 }).join('');
+document.getElementById('ads').innerHTML = pintarAds(ADS);
+document.getElementById('adsRtg').innerHTML = pintarAds(RTG_ADS);
 
 /* marcas de "montado" (solo en este navegador) */
 const CLAVE = 'imcf_w26_montaje_v1'; let hechos = {};

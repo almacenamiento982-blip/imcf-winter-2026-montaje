@@ -223,3 +223,137 @@ DESCRIPCIÓN:
 
 PARÁMETROS DE URL:
 utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=go_all_in_es
+
+##################################################
+OPCIONAL · CONJUNTO RTG (solo si Alessandro lo aprueba)
+##################################################
+Presupuesto: va en cada conjunto (BROAD y RTG), no en la campaña.
+Nombre del conjunto: FTL | RTG | IG365 + WEB60
+Públicos: IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D · IMCF | WEB VISITORS | 60D · IMCF | WEB LEAD | 30D (si existe)
+Excluir: IMCF | WEB PURCHASE | 60D (si existe)
+
+==================================================
+ANUNCIO R01 | RTG VIDEO | EN
+==================================================
+Archivo: 01_VIDEO_EN.mp4   ·   Miniatura: 01_VIDEO_EN_portada.jpg
+
+TEXTO PRINCIPAL:
+This is where they'll train this winter ⚽💗
+4 days at the Florida Blue Training Center with official Inter Miami CF coaches.
+📅 Dec 27–30 · 8:30 am – 12:30 pm · Fort Lauderdale
+👦👧 Boys & girls 6–16
+Payment options at checkout. Register now 👇
+
+TÍTULO:
+Train where Inter Miami trains
+
+DESCRIPCIÓN:
+Payment options at checkout
+
+PARÁMETROS DE URL:
+utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=rtg_video_en
+
+==================================================
+ANUNCIO R02 | RTG VIDEO | ES
+==================================================
+Archivo: 02_VIDEO_ES.mp4   ·   Miniatura: 02_VIDEO_ES_portada.jpg
+
+TEXTO PRINCIPAL:
+Aquí es donde va a entrenar este invierno ⚽💗
+4 días en el Florida Blue Training Center con entrenadores oficiales de Inter Miami CF.
+📅 27–30 de diciembre · 8:30 am – 12:30 pm · Fort Lauderdale
+👦👧 Niños y niñas de 6 a 16 años
+Pago en cuotas al inscribirse. Inscríbelo aquí 👇
+
+TÍTULO:
+Entrena donde entrena Inter Miami
+
+DESCRIPCIÓN:
+Pago en cuotas al inscribirse
+
+PARÁMETROS DE URL:
+utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=rtg_video_es
+
+==================================================
+ANUNCIO R03 | RTG HERO | EN
+==================================================
+Archivo: 03_HERO_EN.jpg
+
+TEXTO PRINCIPAL:
+Still thinking about Winter Camp? ⚽💗
+4 days with official Inter Miami CF coaches, right after Christmas.
+📅 Dec 27–30 · Florida Blue Training Center, Fort Lauderdale
+👦👧 Boys & girls 6–16 · kit, hoodie and hat included
+Payment options at checkout. Register today 👇
+
+TÍTULO:
+Still thinking? Dec 27–30 in Fort Lauderdale
+
+DESCRIPCIÓN:
+Payment options at checkout
+
+PARÁMETROS DE URL:
+utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=rtg_hero_en
+
+==================================================
+ANUNCIO R04 | RTG HERO | ES
+==================================================
+Archivo: 04_HERO_ES.jpg
+
+TEXTO PRINCIPAL:
+¿Todavía lo estás pensando? ⚽💗
+4 días con entrenadores oficiales de Inter Miami CF, justo después de Navidad.
+📅 27–30 de diciembre · Florida Blue Training Center, Fort Lauderdale
+👦👧 Niños y niñas de 6 a 16 años · incluye kit, hoodie y gorra
+Pago en cuotas al inscribirse. Inscríbelo hoy 👇
+
+TÍTULO:
+¿Lo sigues pensando? 27–30 dic en Fort Lauderdale
+
+DESCRIPCIÓN:
+Pago en cuotas al inscribirse
+
+PARÁMETROS DE URL:
+utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=rtg_hero_es
+
+==================================================
+ANUNCIO R05 | RTG BEST GIFT | EN
+==================================================
+Archivo: 07_BEST_GIFT_EN.jpg
+
+TEXTO PRINCIPAL:
+Christmas is almost here 🎁⚽
+Give them 4 days of real Inter Miami CF training with official Inter Miami CF coaches.
+📅 Dec 27–30 · Florida Blue Training Center, Fort Lauderdale
+👦👧 Ages 6–16 · kit, hoodie and hat included
+Payment options at checkout. Register now 👇
+
+TÍTULO:
+The gift they'll remember
+
+DESCRIPCIÓN:
+Dec 27–30 · Ages 6–16
+
+PARÁMETROS DE URL:
+utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=rtg_best_gift_en
+
+==================================================
+ANUNCIO R06 | RTG BEST GIFT | ES
+==================================================
+Archivo: 08_BEST_GIFT_ES.jpg
+
+TEXTO PRINCIPAL:
+La Navidad ya casi llega 🎁⚽
+Regálale 4 días de entrenamiento real de Inter Miami CF con entrenadores oficiales de Inter Miami CF.
+📅 27–30 de diciembre · Florida Blue Training Center, Fort Lauderdale
+👦👧 De 6 a 16 años · incluye kit, hoodie y gorra
+Pago en cuotas al inscribirse. Inscríbelo aquí 👇
+
+TÍTULO:
+El regalo que va a recordar
+
+DESCRIPCIÓN:
+27–30 dic · 6 a 16 años
+
+PARÁMETROS DE URL:
+utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=rtg_best_gift_es
