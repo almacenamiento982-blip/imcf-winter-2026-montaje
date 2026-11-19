@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Winter Camp 2026 · archivos y textos</title>
+<style>
+:root{--fondo:#faf7f4;--papel:#fff;--tinta:#1e1e1e;--gris:#5d5d5d;--linea:#e6e0da;--rosa:#F5B4CB;--rosa2:#fbe3ec;--negro:#212322;--cel:#60D7FC;--ok:#1b8a4b;--ok2:#e5f5eb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:var(--negro);color:#fff;padding:24px 16px 20px;border-bottom:6px solid var(--rosa)}
+.in{max-width:1000px;margin:0 auto}
+header h1{margin:0 0 6px;font-size:clamp(21px,4vw,30px);line-height:1.15;text-transform:uppercase}
+header h1 b{color:var(--rosa)}
+header p{margin:0;color:#d9d4cf;font-size:15px}
+nav{position:sticky;top:0;z-index:5;background:var(--papel);border-bottom:1px solid var(--linea)}
+nav .in{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;scrollbar-width:thin}
+nav a{flex:none;text-decoration:none;color:var(--tinta);font-size:13px;font-weight:700;padding:6px 11px;border-radius:999px;background:var(--fondo);border:1px solid var(--linea);white-space:nowrap}
+nav a.hecho{background:var(--ok2);border-color:var(--ok);color:var(--ok)}
+main{max-width:1000px;margin:0 auto;padding:6px 16px 70px}
+h2{font-size:clamp(19px,3vw,24px);margin:30px 0 4px;text-transform:uppercase;line-height:1.2}
+.sub{color:var(--gris);margin:0 0 12px}
+.todo{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--papel);border:1px solid var(--linea);border-radius:12px;padding:14px}
+.todo p{margin:0;flex:1 1 260px;font-size:15px}
+a.btn,button{font:700 14px system-ui,sans-serif;border:0;border-radius:8px;padding:9px 14px;cursor:pointer;text-decoration:none;display:inline-block}
+a.btn{background:var(--rosa);color:var(--negro)}
+a.btn:hover{filter:brightness(.95)}
+a.btn.sec{background:var(--fondo);border:1px solid var(--linea);color:var(--tinta)}
+button.copiar{background:var(--negro);color:#fff;padding:6px 11px;font-size:13px}
+button.copiar.listo{background:var(--ok)}
+.datos{background:var(--papel);border:1px solid var(--linea);border-radius:12px;overflow:hidden}
+.dato{display:grid;grid-template-columns:minmax(140px,230px) 1fr auto;gap:6px 12px;align-items:center;padding:10px 14px;border-top:1px solid var(--linea)}
+.dato:first-child{border-top:0}
+.dato b{font-size:14px}
+.dato em{display:block;font-style:normal;font-weight:400;color:var(--gris);font-size:12px}
+.dato span{overflow-wrap:anywhere;font-size:15px}
+.ad{background:var(--papel);border:1px solid var(--linea);border-radius:14px;margin:16px 0;overflow:hidden;display:grid;grid-template-columns:260px 1fr}
+.ad.hecho{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok2)}
+.ad .media{background:var(--negro);padding:12px;display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.ad .media img,.ad .media video{width:100%;border-radius:8px;display:block;background:#000}
+.ad .media img{cursor:zoom-in}
+.ad .media a.btn{text-align:center}
+.ad .media small{color:#bdb7b1;font-size:12px;text-align:center;overflow-wrap:anywhere}
+.ad .cuerpo{padding:14px 16px;min-width:0}
+.ad h3{margin:0 0 2px;font-size:19px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.idi{font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px;background:var(--cel);color:#07303d}
+.idi.es{background:var(--rosa);color:var(--negro)}
+.campo{border-top:1px solid var(--linea);padding:10px 0}
+.campo .cab{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:4px}
+.campo .cab b{font-size:13px;text-transform:uppercase;letter-spacing:.02em}
+.campo .cab em{font-style:normal;font-weight:400;color:var(--gris);text-transform:none;letter-spacing:0}
+.campo pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--fondo);border:1px solid var(--linea);border-radius:8px;padding:8px 10px;font:14px/1.5 system-ui,"Segoe UI",Arial,sans-serif}
+label.listo{display:flex;gap:8px;align-items:center;font-weight:700;font-size:14px;margin-top:8px;cursor:pointer}
+label.listo input{width:20px;height:20px;accent-color:var(--ok)}
+#zoom{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out;padding:14px}
+#zoom img{max-width:100%;max-height:100%;border-radius:8px}
+footer{color:var(--gris);font-size:13px;margin-top:30px}
+@media (max-width:700px){
+  .ad{grid-template-columns:1fr}
+  .ad .media{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .ad .media img,.ad .media video{width:130px;flex:none}
+  .ad .media a.btn{flex:1 1 150px}
+  .ad .media small{flex-basis:100%}
+  .dato{grid-template-columns:1fr auto}
+  .dato b{grid-column:1 / -1}
+}
+</style>
+</head>
+<body>
+<header><div class="in">
+  <h1>Inter Miami CF <b>Winter Camp 2026</b> · archivos y textos</h1>
+  <p>Para montar los anuncios en Meta: descarga cada archivo y copia cada texto con un clic · 10 anuncios, en inglés y español</p>
+</div></header>
+<nav><div class="in" id="menu"><a href="#comunes">Datos comunes</a></div></nav>
+<main>
+
+<h2>Descargar todo</h2>
+<div class="todo">
+  <p>Un solo archivo con los 2 videos, sus portadas, las 8 imágenes y los textos (68 MB). Más abajo también se puede bajar cada uno por separado.</p>
+  <a class="btn" href="files/IMCF_WINTER_CAMP_2026_ARCHIVOS.zip" download>⬇ Descargar todo (.zip)</a>
+  <a class="btn sec" href="files/TEXTOS_PARA_COPIAR.txt" download>⬇ Solo los textos (.txt)</a>
+</div>
+
+<h2 id="comunes">Datos comunes</h2>
+<p class="sub">Se usan una sola vez o son iguales en los 10 anuncios.</p>
+<div class="datos" id="datos"></div>
+
+<h2>Los 10 anuncios</h2>
+<p class="sub">En el orden del montaje. Cada texto se pega tal cual, con sus emojis y saltos de línea. Marca "Montado" al terminar cada uno.</p>
+<div id="ads"></div>
+
+<footer>Página de trabajo · no aparece en buscadores.</footer>
+</main>
+<div id="zoom"><img alt=""></div>
+
+<script>
+const F = 'files/';
+const COMUNES = [
+  ['Nombre de la campaña', 'Campaign name', 'IMCF | LEADS | WINTER CAMP FTL | NOV26'],
+  ['Nombre del conjunto', 'Ad set name', 'FTL | BROAD | 40MI | 18-65'],
+  ['Conjunto de datos (píxel)', 'Dataset / Pixel ID', '662187043089834'],
+  ['Dirección de la sede', 'Location', '1350 NW 55th St, Fort Lauderdale, FL 33309'],
+  ['URL del sitio web', 'Website URL · igual en los 10', 'https://www.intermiamicfcamps.com/summer_camps/24/Fort%20Lauderdale'],
+  ['Enlace visible', 'Display link · igual en los 10', 'intermiamicfcamps.com'],
+  ['Botón', 'Call to action · igual en los 10', 'Sign up (Registrarte)'],
+];
+const ADS = [
+ {n:'01', idi:'EN', cre:'VIDEO', arch:'01_VIDEO_EN.mp4', port:'01_VIDEO_EN_portada.jpg', vista:'01_VIDEO_EN_vista.mp4', utm:'video_en',
+  txt:'This winter break, train where Inter Miami trains ⚽💗\n4 days with official Inter Miami CF coaches at the Florida Blue Training Center.\n📅 Dec 27–30 · Fort Lauderdale\n👦👧 Boys & girls 6–16\nRegister now 👇',
+  tit:'Train where Inter Miami trains', des:'Dec 27–30 · Fort Lauderdale · Ages 6–16'},
+ {n:'02', idi:'ES', cre:'VIDEO', arch:'02_VIDEO_ES.mp4', port:'02_VIDEO_ES_portada.jpg', vista:'02_VIDEO_ES_vista.mp4', utm:'video_es',
+  txt:'Estas vacaciones, entrena donde entrena Inter Miami ⚽💗\n4 días con entrenadores oficiales de Inter Miami CF en el Florida Blue Training Center.\n📅 27–30 de diciembre · Fort Lauderdale\n👦👧 Niños y niñas de 6 a 16 años\nInscríbelo aquí 👇',
+  tit:'Entrena donde entrena Inter Miami', des:'27–30 dic · Fort Lauderdale · 6 a 16 años'},
+ {n:'03', idi:'EN', cre:'HERO', arch:'03_HERO_EN.jpg', utm:'hero_en',
+  txt:'This winter, train like Inter Miami ⚽💗\n4 days with official Inter Miami CF coaches at the Florida Blue Training Center, for field players and goalkeepers.\n📅 Dec 27–30 · Fort Lauderdale\n👦👧 Boys & girls 6–16\nRegister now 👇',
+  tit:'Inter Miami CF Winter Camp · Dec 27–30', des:'Fort Lauderdale · Ages 6–16'},
+ {n:'04', idi:'ES', cre:'HERO', arch:'04_HERO_ES.jpg', utm:'hero_es',
+  txt:'Este invierno, entrena como Inter Miami ⚽💗\n4 días con entrenadores oficiales de Inter Miami CF en el Florida Blue Training Center, para jugadores de campo y porteros.\n📅 27–30 de diciembre · Fort Lauderdale\n👦👧 Niños y niñas de 6 a 16 años\nInscríbelo aquí 👇',
+  tit:'Inter Miami CF Winter Camp · 27–30 dic', des:'Fort Lauderdale · 6 a 16 años'},
+ {n:'05', idi:'EN', cre:'TRAIN LIKE', arch:'05_TRAIN_LIKE_EN.jpg', utm:'train_like_en',
+  txt:'Train like Inter Miami CF this Christmas break ⚽💗\n4 days on the pitch with official Inter Miami CF coaches at the Florida Blue Training Center.\n📅 Dec 27–30 · 8:30 am – 12:30 pm · Fort Lauderdale\n👦👧 Boys & girls 6–16\nRegister now 👇',
+  tit:'Train with official Inter Miami CF coaches', des:'Dec 27–30 · Fort Lauderdale · Ages 6–16'},
+ {n:'06', idi:'ES', cre:'TRAIN LIKE', arch:'06_TRAIN_LIKE_ES.jpg', utm:'train_like_es',
+  txt:'Estas vacaciones de Navidad, entrena como Inter Miami CF ⚽💗\n4 días en la cancha con entrenadores oficiales de Inter Miami CF en el Florida Blue Training Center.\n📅 27–30 de diciembre · 8:30 am – 12:30 pm · Fort Lauderdale\n👦👧 Niños y niñas de 6 a 16 años\nInscríbelo aquí 👇',
+  tit:'Con entrenadores oficiales de Inter Miami CF', des:'27–30 dic · Fort Lauderdale · 6 a 16 años'},
+ {n:'07', idi:'EN', cre:'BEST GIFT', arch:'07_BEST_GIFT_EN.jpg', utm:'best_gift_en',
+  txt:'The best gift this Christmas isn\'t under the tree 🎁⚽\nIt\'s 4 days of real Inter Miami CF training with official Inter Miami CF coaches, right after Christmas.\n📅 Dec 27–30 · Florida Blue Training Center, Fort Lauderdale\n👦👧 Ages 6–16 · kit, hoodie and hat included\nPayment options at checkout. Register now 👇',
+  tit:'Give the gift of Inter Miami CF training', des:'Dec 27–30 · Fort Lauderdale · Ages 6–16'},
+ {n:'08', idi:'ES', cre:'BEST GIFT', arch:'08_BEST_GIFT_ES.jpg', utm:'best_gift_es',
+  txt:'El mejor regalo de esta Navidad no está debajo del árbol 🎁⚽\nSon 4 días de entrenamiento real de Inter Miami CF con entrenadores oficiales de Inter Miami CF, justo después de Navidad.\n📅 27–30 de diciembre · Florida Blue Training Center, Fort Lauderdale\n👦👧 De 6 a 16 años · incluye kit, hoodie y gorra\nPago en cuotas al inscribirse. Inscríbelo aquí 👇',
+  tit:'Regala entrenamiento de Inter Miami CF', des:'27–30 dic · Fort Lauderdale · 6 a 16 años'},
+ {n:'09', idi:'EN', cre:'GO ALL IN', arch:'09_GO_ALL_IN_EN.jpg', utm:'go_all_in_en',
+  txt:'This winter, go all in 💗🧤\nField players and goalkeepers train for 4 days with official Inter Miami CF coaches at the Florida Blue Training Center.\n📅 Dec 27–30 · Fort Lauderdale\n👦👧 Boys & girls 6–16\nRegister now 👇',
+  tit:'Winter Camp for players and goalkeepers', des:'Dec 27–30 · Fort Lauderdale · Ages 6–16'},
+ {n:'10', idi:'ES', cre:'GO ALL IN', arch:'10_GO_ALL_IN_ES.jpg', utm:'go_all_in_es',
+  txt:'Este invierno, dalo todo 💗🧤\nJugadores de campo y porteros entrenan 4 días con entrenadores oficiales de Inter Miami CF en el Florida Blue Training Center.\n📅 27–30 de diciembre · Fort Lauderdale\n👦👧 Niños y niñas de 6 a 16 años\nInscríbelo aquí 👇',
+  tit:'Winter Camp para jugadores y porteros', des:'27–30 dic · Fort Lauderdale · 6 a 16 años'},
+];
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const btnCopiar = t => `<button class="copiar" type="button" data-copia="${esc(t)}">Copiar</button>`;
+const campo = (es, en, t) => `<div class="campo"><div class="cab"><b>${es} <em>· ${en}</em></b>${btnCopiar(t)}</div><pre>${esc(t)}</pre></div>`;
+
+document.getElementById('datos').innerHTML = COMUNES.map(([es, en, v]) => `<div class="dato"><b>${es}<em>${en}</em></b><span>${esc(v)}</span>${btnCopiar(v.replace(' (Registrarte)', ''))}</div>`).join('');
+document.getElementById('menu').insertAdjacentHTML('beforeend', ADS.map(a => `<a href="#ad${a.n}" data-n="${a.n}">${a.n} · ${a.cre} ${a.idi}</a>`).join(''));
+document.getElementById('ads').innerHTML = ADS.map(a => {
+  const nombre = `${a.n} | ${a.cre} | ${a.idi}`;
+  const utm = 'utm_source=meta&utm_medium=paid&utm_campaign=imcf_winter_2026&utm_content=' + a.utm;
+  const media = a.vista
+    ? `<video controls playsinline preload="none" poster="${F + a.port}" src="${F + a.vista}"></video>
+       <a class="btn" href="${F + a.arch}" download>⬇ Descargar video</a>
+       <a class="btn sec" href="${F + a.port}" download>⬇ Descargar portada</a>
+       <small>${a.arch} · 33 MB<br>${a.port}</small>`
+    : `<img src="${F + a.arch}" alt="${nombre}" loading="lazy">
+       <a class="btn" href="${F + a.arch}" download>⬇ Descargar imagen</a>
+       <small>${a.arch}</small>`;
+  return `<article class="ad" id="ad${a.n}" data-n="${a.n}"><div class="media">${media}</div><div class="cuerpo">
+    <h3>${a.n} · ${a.cre} <span class="idi ${a.idi === 'ES' ? 'es' : ''}">${a.idi === 'ES' ? 'ESPAÑOL' : 'INGLÉS'}</span></h3>
+    ${campo('Nombre del anuncio', 'Ad name', nombre)}
+    ${campo('Texto principal', 'Primary text', a.txt)}
+    ${campo('Título', 'Headline', a.tit)}
+    ${campo('Descripción', 'Description', a.des)}
+    ${campo('Parámetros de URL', 'URL parameters', utm)}
+    <label class="listo"><input type="checkbox"> Montado</label>
+  </div></article>`;
+}).join('');
+
+/* marcas de "montado" (solo en este navegador) */
+const CLAVE = 'imcf_w26_montaje_v1'; let hechos = {};
+try { hechos = JSON.parse(localStorage.getItem(CLAVE) || '{}'); } catch (e) { hechos = {}; }
+function refrescar(){ document.querySelectorAll('.ad').forEach(d => { const on = !!hechos[d.dataset.n]; d.classList.toggle('hecho', on); d.querySelector('label.listo input').checked = on; const m = document.querySelector(`#menu a[data-n="${d.dataset.n}"]`); if (m) m.classList.toggle('hecho', on); }); }
+document.addEventListener('change', e => { const d = e.target.closest('.ad'); if (!d || !e.target.matches('label.listo input')) return; if (e.target.checked) hechos[d.dataset.n] = 1; else delete hechos[d.dataset.n]; try { localStorage.setItem(CLAVE, JSON.stringify(hechos)); } catch (er) {} refrescar(); });
+refrescar();
+
+/* copiar */
+function copiar(t){
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
+  return new Promise((ok, mal) => { const a = document.createElement('textarea'); a.value = t; a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select(); try { document.execCommand('copy') ? ok() : mal(); } catch (e) { mal(e); } a.remove(); });
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('button.copiar');
+  if (b) { copiar(b.dataset.copia).then(() => { b.textContent = 'Copiado ✓'; b.classList.add('listo'); setTimeout(() => { b.textContent = 'Copiar'; b.classList.remove('listo'); }, 1600); }).catch(() => { b.textContent = 'No se pudo'; }); return; }
+  const z = document.getElementById('zoom'); const im = e.target.closest('.ad .media img');
+  if (im) { z.querySelector('img').src = im.src; z.style.display = 'flex'; } else if (e.target.closest('#zoom')) z.style.display = 'none';
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.getElementById('zoom').style.display = 'none'; });
+</script>
+</body>
+</html>
