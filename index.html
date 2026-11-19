@@ -56,6 +56,16 @@ label.listo{display:flex;gap:8px;align-items:center;font-weight:700;font-size:14
 label.listo input{width:20px;height:20px;accent-color:var(--ok)}
 #zoom{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out;padding:14px}
 #zoom img{max-width:100%;max-height:100%;border-radius:8px}
+.pasos{background:var(--papel);border:1px solid var(--linea);border-radius:12px;padding:14px 16px}
+.pasos ol{margin:6px 0 0;padding-left:22px}
+.pasos li{margin:8px 0}
+.enlace{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0}
+.enlace code{background:var(--fondo);border:1px solid var(--linea);border-radius:6px;padding:3px 8px;font:14px ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+.casos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:12px}
+.caso{border-radius:10px;padding:10px 12px;font-size:15px}
+.caso.si{background:var(--ok2);border-left:5px solid var(--ok)}
+.caso.no{background:#fff3d6;border-left:5px solid #e0a100}
+.caso .t{display:block;font-weight:700;margin-bottom:2px}
 footer{color:var(--gris);font-size:13px;margin-top:30px}
 @media (max-width:700px){
   .ad{grid-template-columns:1fr}
@@ -73,8 +83,27 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
   <h1>Inter Miami CF <b>Winter Camp 2026</b> · archivos y textos</h1>
   <p>Para montar los anuncios en Meta: descarga cada archivo y copia cada texto con un clic · 10 anuncios, en inglés y español</p>
 </div></header>
-<nav><div class="in" id="menu"><a href="#comunes">Datos comunes</a></div></nav>
+<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#comunes">Datos comunes</a></div></nav>
 <main>
+
+<h2 id="pixel">Primero: revisar el píxel</h2>
+<p class="sub">Antes de crear la campaña, para saber qué evento elegir. Toma unos 3 minutos.</p>
+<div class="pasos">
+  <ol>
+    <li><b>Abrir el Administrador de eventos</b> (Events Manager) con el usuario que tiene acceso a la cuenta de Inter Miami CF Camps:
+      <div class="enlace"><a class="btn" href="https://business.facebook.com/events_manager2" target="_blank" rel="noopener">Abrir el Administrador de eventos ↗</a><code>business.facebook.com/events_manager2</code><button class="copiar" type="button" data-copia="https://business.facebook.com/events_manager2">Copiar</button></div></li>
+    <li><b>En la lista de la izquierda, elegir el conjunto de datos</b> (dataset / pixel) con este número:
+      <div class="enlace"><code>662187043089834</code><button class="copiar" type="button" data-copia="662187043089834">Copiar</button></div></li>
+    <li><b>Entrar a la pestaña "Información general"</b> (Overview).</li>
+    <li><b>Buscar en la lista estos dos eventos</b> y mirar, a la derecha de cada uno, cuándo llegó por última vez:
+      <ul><li><b>Cliente potencial</b> (Lead): la familia dejó sus datos.</li><li><b>Compra</b> (Purchase): la familia pagó.</li></ul></li>
+  </ol>
+  <div class="casos">
+    <div class="caso si"><span class="t">Aparecen Lead y Purchase con fechas recientes</span>Todo bien. Seguir con la campaña y, en el conjunto de anuncios, elegir el evento <b>Cliente potencial (Lead)</b>.</div>
+    <div class="caso no"><span class="t">Solo aparece PageView</span>No crear la campaña todavía y avisar a David. Tampoco crear eventos nuevos por clic en botones.</div>
+  </div>
+</div>
+<div class="enlace" style="margin-top:12px"><a class="btn sec" href="https://adsmanager.facebook.com" target="_blank" rel="noopener">Después: abrir el Administrador de anuncios ↗</a><code>adsmanager.facebook.com</code><button class="copiar" type="button" data-copia="https://adsmanager.facebook.com">Copiar</button></div>
 
 <h2>Descargar todo</h2>
 <div class="todo">
