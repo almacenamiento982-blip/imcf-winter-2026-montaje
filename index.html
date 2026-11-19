@@ -83,7 +83,7 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
   <h1>Inter Miami CF <b>Winter Camp 2026</b> · archivos y textos</h1>
   <p>Para montar los anuncios en Meta: descarga cada archivo y copia cada texto con un clic · 10 anuncios, en inglés y español</p>
 </div></header>
-<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#publico">Instagram y público</a><a href="#campos">Campaña y conjunto</a><a href="#rtg">RTG (opcional)</a><a href="#comunes">Datos comunes</a></div></nav>
+<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#publico">Instagram y público</a><a href="#campos">Campaña y conjunto</a><a href="#asistente">Asistente del anuncio</a><a href="#rtg">RTG (opcional)</a><a href="#comunes">Datos comunes</a></div></nav>
 <main>
 
 <h2 id="pixel">Primero: revisar el píxel</h2>
@@ -137,6 +137,22 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
 <h2 id="comunes">Iguales en todos los anuncios</h2>
 <p class="sub">Se usan una sola vez o son iguales en los 10 anuncios.</p>
 <div class="datos" id="datos"></div>
+
+<h2 id="asistente">Cómo se arma cada anuncio (asistente de 6 pasos)</h2>
+<p class="sub">Al poner el video o la imagen, Meta abre un asistente con estos pasos arriba: Creative setup → Media → Text → Creative generation → Enhancements → Translation.</p>
+<div class="pasos">
+  <ol>
+    <li><b>Creative setup → Source URL:</b> pegar este enlace (es el mismo en todos los anuncios).
+      <div class="enlace"><code>https://www.intermiamicfcamps.com/summer_camps/24/Fort%20Lauderdale</code><button class="copiar" type="button" data-copia="https://www.intermiamicfcamps.com/summer_camps/24/Fort%20Lauderdale">Copiar</button></div>
+      <b>Site links:</b> dejar en <b>Off</b>. → Next</li>
+    <li><b>Media:</b> subir el archivo del anuncio (en los videos, la portada como <b>Thumbnail</b>). → Next</li>
+    <li><b>Text:</b> pegar <b>Primary text</b>, <b>Headline</b> y <b>Description</b> de la ficha del anuncio. No agregar más opciones de texto. → Next</li>
+    <li><b>Creative generation:</b> nada encendido (ni textos, ni imágenes, ni fondos generados). → Next</li>
+    <li><b>Enhancements:</b> <b>todo en Off</b>, uno por uno. → Next</li>
+    <li><b>Translation:</b> <b>Off</b> (cada idioma va en su propio anuncio). → Done</li>
+  </ol>
+  <p style="margin:10px 0 0">Después, fuera del asistente: <b>Call to action</b> = Sign up · <b>Display link</b> = intermiamicfcamps.com · <b>Tracking → URL parameters</b> = el de la ficha.</p>
+</div>
 
 <h2>Los 10 anuncios</h2>
 <p class="sub">En el orden del montaje. Cada texto se pega tal cual, con sus emojis y saltos de línea. Marca "Montado" al terminar cada uno.</p>
@@ -323,6 +339,7 @@ const pintarAds = lista => lista.map(a => {
   return `<article class="ad" id="ad${a.n}" data-n="${a.n}"><div class="media">${media}</div><div class="cuerpo">
     <h3>${a.n} · ${a.cre} <span class="idi ${a.idi === 'ES' ? 'es' : ''}">${a.idi === 'ES' ? 'ESPAÑOL' : 'INGLÉS'}</span></h3>
     ${campo('Nombre del anuncio', 'Ad name', nombre)}
+    ${campo('Enlace de destino', 'Source URL / Website URL', 'https://www.intermiamicfcamps.com/summer_camps/24/Fort%20Lauderdale')}
     ${campo('Texto principal', 'Primary text', a.txt)}
     ${campo('Título', 'Headline', a.tit)}
     ${campo('Descripción', 'Description', a.des)}
