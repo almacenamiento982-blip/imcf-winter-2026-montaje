@@ -83,26 +83,26 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
   <h1>Inter Miami CF <b>Winter Camp 2026</b> · archivos y textos</h1>
   <p>Para montar los anuncios en Meta: descarga cada archivo y copia cada texto con un clic · 10 anuncios, en inglés y español</p>
 </div></header>
-<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#publico">Instagram y público</a><a href="#rtg">RTG (opcional)</a><a href="#comunes">Datos comunes</a></div></nav>
+<nav><div class="in" id="menu"><a href="#pixel">Revisar el píxel</a><a href="#publico">Instagram y público</a><a href="#campos">Campaña y conjunto</a><a href="#rtg">RTG (opcional)</a><a href="#comunes">Datos comunes</a></div></nav>
 <main>
 
 <h2 id="pixel">Primero: revisar el píxel</h2>
 <p class="sub">Antes de crear la campaña, para saber qué evento elegir. Toma unos 3 minutos.</p>
 <div class="pasos">
   <ol>
-    <li><b>Abrir el Administrador de eventos</b> (Events Manager) con el usuario que tiene acceso a la cuenta de Inter Miami CF Camps:
-      <div class="enlace"><a class="btn" href="https://business.facebook.com/events_manager2" target="_blank" rel="noopener">Abrir el Administrador de eventos ↗</a><code>business.facebook.com/events_manager2</code><button class="copiar" type="button" data-copia="https://business.facebook.com/events_manager2">Copiar</button></div></li>
-    <li><b>En la lista de la izquierda, elegir el conjunto de datos</b> (dataset / pixel) con este número:
-      <div class="enlace"><code>662187043089834</code><button class="copiar" type="button" data-copia="662187043089834">Copiar</button></div></li>
-    <li><b>Quedarse en la pestaña "Resumen"</b> (Overview) y bajar hasta la tabla de eventos. Arriba a la derecha, el rango de fechas puede quedar como viene (últimos 28 días).</li>
-    <li><b>Buscar en la lista estos dos eventos</b> y mirar que digan <b>● Activo</b> y, en la última columna, la "Última recepción":
-      <ul><li><b>Cliente potencial</b> (Lead): la familia dejó sus datos.</li><li><b>Comprar</b> (Purchase): la familia pagó.</li></ul></li>
+    <li><b>Abrir Events Manager</b> con el usuario que tiene acceso a la cuenta de Inter Miami:
+      <div class="enlace"><a class="btn" href="https://business.facebook.com/events_manager2" target="_blank" rel="noopener">Open Events Manager ↗</a><code>business.facebook.com/events_manager2</code><button class="copiar" type="button" data-copia="https://business.facebook.com/events_manager2">Copiar</button></div></li>
+    <li><b>Datasets</b> → en "Search by name or ID", buscar este número:<div class="enlace"><code>662187043089834</code><button class="copiar" type="button" data-copia="662187043089834">Copiar</button></div></li>
+    <li><b>Overview</b> → bajar hasta la tabla de eventos.</li>
+    <li>Mirar que estos dos digan <b>● Active</b> y, en "Total events", la línea <b>"Last received"</b>:
+      <ul><li><b>Lead</b>: la familia dejó sus datos.</li><li><b>Purchase</b>: la familia pagó.</li></ul></li>
   </ol>
   <div class="casos">
-    <div class="caso si"><span class="t">Aparecen Lead y Purchase con fechas recientes</span>Todo bien. Seguir con la campaña y, en el conjunto de anuncios, elegir el evento <b>Cliente potencial (Lead)</b>.</div>
+    <div class="caso si"><span class="t">Lead y Purchase dicen Active</span>Todo bien. En el conjunto de anuncios, "Conversion event" = <b>Lead</b>. (Revisado el 19-nov: así está.)</div>
     <div class="caso no"><span class="t">Solo aparece PageView</span>No crear la campaña todavía y avisar a David. Tampoco crear eventos nuevos por clic en botones.</div>
   </div>
 </div>
+
 <h2 id="publico">Segundo: Instagram y público</h2>
 <p class="sub">Antes de crear la campaña. Unos 5 minutos.</p>
 <div class="pasos">
@@ -110,20 +110,22 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
   <div class="enlace"><code>intermiamicf_academy</code><button class="copiar" type="button" data-copia="intermiamicf_academy">Copiar</button></div>
   <p style="margin:14px 0 0"><b>Crear el público de quienes interactuaron con ese Instagram</b> (las familias que ya mostraron interés):</p>
   <ol>
-    <li><b>Abrir Públicos</b> (Audiences):
-      <div class="enlace"><a class="btn" href="https://adsmanager.facebook.com/adsmanager/audiences" target="_blank" rel="noopener">Abrir Públicos ↗</a><code>adsmanager.facebook.com/adsmanager/audiences</code><button class="copiar" type="button" data-copia="https://adsmanager.facebook.com/adsmanager/audiences">Copiar</button></div></li>
-    <li><b>Crear público</b> → <b>Público personalizado</b> (Custom audience).</li>
-    <li><b>Origen:</b> Fuentes de Meta → <b>Cuenta de Instagram</b> → elegir <b>@intermiamicf_academy</b>.</li>
-    <li><b>Eventos:</b> "Todas las personas que interactuaron con esta cuenta profesional" (Everyone who engaged with this professional account).</li>
-    <li><b>Retención:</b> 365 días.</li>
-    <li><b>Nombre del público:</b>
-      <div class="enlace"><code>IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D</code><button class="copiar" type="button" data-copia="IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D">Copiar</button></div></li>
-    <li><b>Crear.</b> Si ofrece hacer un público similar, cerrar esa ventana.</li>
+    <li><b>Audiences</b>:
+      <div class="enlace"><a class="btn" href="https://adsmanager.facebook.com/adsmanager/audiences" target="_blank" rel="noopener">Open Audiences ↗</a><code>adsmanager.facebook.com/adsmanager/audiences</code><button class="copiar" type="button" data-copia="https://adsmanager.facebook.com/adsmanager/audiences">Copiar</button></div></li>
+    <li><b>Create audience</b> → <b>Custom audience</b>.</li>
+    <li><b>Source:</b> Meta sources → <b>Instagram account</b> → <b>@intermiamicf_academy</b>.</li>
+    <li><b>Events:</b> "Everyone who engaged with this professional account".</li>
+    <li><b>Retention:</b> 365 days.</li>
+    <li><b>Audience name:</b><div class="enlace"><code>IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D</code><button class="copiar" type="button" data-copia="IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D">Copiar</button></div></li>
+    <li><b>Create audience.</b> Si ofrece un "Lookalike audience", cerrar esa ventana.</li>
   </ol>
   <div class="casos"><div class="caso no"><span class="t">Si @intermiamicf_academy no aparece</span>La cuenta publicitaria no tiene acceso a ese Instagram. Se sigue con el Instagram que sí aparezca y sin este público, y se avisa a David.</div></div>
 </div>
 
-<div class="enlace" style="margin-top:12px"><a class="btn sec" href="https://adsmanager.facebook.com" target="_blank" rel="noopener">Después: abrir el Administrador de anuncios ↗</a><code>adsmanager.facebook.com</code><button class="copiar" type="button" data-copia="https://adsmanager.facebook.com">Copiar</button></div>
+<h2 id="campos">Campaña y conjunto: lo que va en cada campo</h2>
+<p class="sub">En Ads Manager → "+ Create". Los nombres son los que se leen en pantalla.</p>
+<div class="datos" id="config"></div>
+<div class="enlace" style="margin-top:12px"><a class="btn sec" href="https://adsmanager.facebook.com" target="_blank" rel="noopener">Open Ads Manager ↗</a><code>adsmanager.facebook.com</code><button class="copiar" type="button" data-copia="https://adsmanager.facebook.com">Copiar</button></div>
 
 <h2>Descargar todo</h2>
 <div class="todo">
@@ -132,7 +134,7 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
   <a class="btn sec" href="files/TEXTOS_PARA_COPIAR.txt" download>⬇ Solo los textos (.txt)</a>
 </div>
 
-<h2 id="comunes">Datos comunes</h2>
+<h2 id="comunes">Iguales en todos los anuncios</h2>
 <p class="sub">Se usan una sola vez o son iguales en los 10 anuncios.</p>
 <div class="datos" id="datos"></div>
 
@@ -143,25 +145,25 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
 <h2 id="rtg">Opcional · conjunto RTG</h2>
 <p class="sub">Solo si Alessandro lo aprueba. Si no, esta sección se ignora.</p>
 <div class="pasos">
-  <p style="margin:0 0 6px"><b>Importante:</b> si va el RTG, el presupuesto se pone en cada conjunto y no en la campaña: <b>USD 15</b> en el conjunto BROAD y <b>USD 5</b> en el RTG. El BROAD excluye los dos primeros públicos de abajo.</p>
-  <p style="margin:12px 0 0"><b>1. Crear los públicos</b> en Públicos (Audiences) → Crear público → Público personalizado:</p>
+  <p style="margin:0 0 6px"><b>Importante:</b> si va el RTG, en la campaña se elige <b>"Ad set budget"</b>: <b>$15</b> en el conjunto BROAD y <b>$5</b> en el RTG. El BROAD pone los dos primeros públicos de abajo en "Exclude these custom audiences".</p>
+  <p style="margin:12px 0 0"><b>1. Crear los públicos</b> en Audiences → Create audience → Custom audience → <b>Website</b>:</p>
   <ol>
-    <li><b>Visitantes de la web:</b> Sitio web · conjunto de datos 662187043089834 · Todos los visitantes del sitio web · 60 días.
+    <li><b>Visitantes de la web:</b> Inter Miami Camps Pixel · Events: <b>All website visitors</b> · Retention: <b>60 days</b>.
       <div class="enlace"><code>IMCF | WEB VISITORS | 60D</code><button class="copiar" type="button" data-copia="IMCF | WEB VISITORS | 60D">Copiar</button></div></li>
-    <li><b>Registrados</b> (solo si en el píxel apareció Cliente potencial): Sitio web · Eventos: Cliente potencial · 30 días.
+    <li><b>Registrados:</b> Events: <b>Lead</b> · Retention: <b>30 days</b>.
       <div class="enlace"><code>IMCF | WEB LEAD | 30D</code><button class="copiar" type="button" data-copia="IMCF | WEB LEAD | 30D">Copiar</button></div></li>
-    <li><b>Compradores</b> (solo si apareció Comprar): Sitio web · Eventos: Comprar · 60 días.
+    <li><b>Compradores:</b> Events: <b>Purchase</b> · Retention: <b>60 days</b>.
       <div class="enlace"><code>IMCF | WEB PURCHASE | 60D</code><button class="copiar" type="button" data-copia="IMCF | WEB PURCHASE | 60D">Copiar</button></div></li>
   </ol>
-  <p style="margin:12px 0 0"><b>2. Crear el conjunto en la misma campaña</b> (no duplicar el BROAD):</p>
+  <p style="margin:12px 0 0"><b>2. Crear el conjunto en la misma campaña</b> (Ad sets → + Create → Use existing campaign; no duplicar el BROAD):</p>
   <ol>
-    <li><b>Nombre:</b> <span class="enlace" style="display:inline-flex"><code>FTL | RTG | IG365 + WEB60</code><button class="copiar" type="button" data-copia="FTL | RTG | IG365 + WEB60">Copiar</button></span></li>
-    <li><b>Conversión:</b> igual que el BROAD (Sitio web · Maximizar conversiones · Cliente potencial).</li>
-    <li><b>Presupuesto:</b> diario USD 5 · fin 26 dic 2026, 11:59 pm.</li>
-    <li><b>Público:</b> usar las opciones de público originales (sin Advantage+). Incluir IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D, IMCF | WEB VISITORS | 60D y IMCF | WEB LEAD | 30D (si existe). Excluir IMCF | WEB PURCHASE | 60D (si existe).</li>
-    <li><b>Lugar:</b> 1350 NW 55th St, Fort Lauderdale + 40 mi · Edad 18–65 · sin segmentación detallada.</li>
-    <li><b>Ubicaciones:</b> manuales, solo Facebook e Instagram.</li>
-    <li><b>Anuncios:</b> los 6 de abajo, con el mismo enlace, botón y mejoras apagadas que los otros.</li>
+    <li><b>Ad set name:</b> <span class="enlace" style="display:inline-flex"><code>FTL | RTG | IG365 + WEB60</code><button class="copiar" type="button" data-copia="FTL | RTG | IG365 + WEB60">Copiar</button></span></li>
+    <li><b>Conversion:</b> igual que el BROAD (Website · Maximize number of conversions · Lead).</li>
+    <li><b>Daily budget:</b> $5 · <b>End date:</b> Dec 26, 2026 11:59 PM.</li>
+    <li><b>Audience:</b> "Switch to original audience options". En <b>Custom audiences</b> incluir IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D, IMCF | WEB VISITORS | 60D y IMCF | WEB LEAD | 30D (si existe). En <b>Exclude</b>: IMCF | WEB PURCHASE | 60D (si existe).</li>
+    <li><b>Locations:</b> 1350 NW 55th St, Fort Lauderdale +40 mi · <b>Age</b> 18–65+ · <b>Detailed targeting</b> vacío.</li>
+    <li><b>Placements:</b> Manual placements, solo Facebook e Instagram.</li>
+    <li><b>Ads:</b> los 6 de abajo, con el mismo Website URL, Call to action y Advantage+ creative en Off que los otros.</li>
   </ol>
 </div>
 <div id="adsRtg"></div>
@@ -173,14 +175,35 @@ footer{color:var(--gris);font-size:13px;margin-top:30px}
 <script>
 const F = 'files/';
 const COMUNES = [
-  ['Nombre de la campaña', 'Campaign name', 'IMCF | LEADS | WINTER CAMP FTL | NOV26'],
-  ['Nombre del conjunto', 'Ad set name', 'FTL | BROAD | 40MI | 18-65'],
-  ['Conjunto de datos (píxel)', 'Dataset / Pixel ID', '662187043089834'],
-  ['Dirección de la sede', 'Location', '1350 NW 55th St, Fort Lauderdale, FL 33309'],
-  ['URL del sitio web', 'Website URL · igual en los 10', 'https://www.intermiamicfcamps.com/summer_camps/24/Fort%20Lauderdale'],
-  ['Enlace visible', 'Display link · igual en los 10', 'intermiamicfcamps.com'],
-  ['Botón', 'Call to action · igual en los 10', 'Sign up (Registrarte)'],
+  ['Website URL', 'URL del sitio web · igual en todos los anuncios', 'https://www.intermiamicfcamps.com/summer_camps/24/Fort%20Lauderdale'],
+  ['Display link', 'Enlace visible · igual en todos', 'intermiamicfcamps.com'],
+  ['Call to action', 'Botón · igual en todos', 'Sign up'],
+  ['Tracking → Website events', 'Seguimiento · igual en todos', 'Inter Miami Camps Pixel · 662187043089834'],
 ];
+const CONFIG = [
+  ['Campaign objective', 'Objetivo', 'Leads', 0],
+  ['Campaign setup', 'Si lo pregunta', 'Manual leads campaign', 0],
+  ['Campaign name', 'Nombre de la campaña', 'IMCF | LEADS | WINTER CAMP FTL | NOV26', 1],
+  ['Special Ad Categories', 'Categorías especiales', 'Dejar vacío', 0],
+  ['Budget', 'Presupuesto · si va el RTG, elegir "Ad set budget"', 'Campaign budget · Daily budget', 0],
+  ['Campaign bid strategy', 'Estrategia de puja', 'Highest volume', 0],
+  ['Ad set name', 'Nombre del conjunto', 'FTL | BROAD | 40MI | 18-65', 1],
+  ['Conversion location', 'Lugar de conversión', 'Website', 0],
+  ['Performance goal', 'Objetivo de rendimiento', 'Maximize number of conversions', 0],
+  ['Dataset', 'El píxel', 'Inter Miami Camps Pixel · 662187043089834', 0],
+  ['Conversion event', 'Evento', 'Lead', 0],
+  ['End date', 'Fecha de fin', 'Dec 26, 2026 · 11:59 PM', 0],
+  ['Locations', 'Quitar "United States", buscar la sede y poner radio +40 mi', '1350 NW 55th St, Fort Lauderdale, FL 33309', 1],
+  ['Minimum age', 'Edad mínima', '18', 0],
+  ['Audience suggestion', 'Sugerencia de público (Advantage+ audience)', 'Custom audiences: IMCF | IG ENGAGERS | INTERMIAMICF_ACADEMY | 365D · Age 28–55 · All genders', 0],
+  ['Detailed targeting', 'Intereses, dentro de la sugerencia', 'Parents with Early School-Age Children (06-08) · Parents with Preteens (08-12) · Parents with Teenagers (13-17) · Soccer · Major League Soccer · Inter Miami CF', 0],
+  ['Placements', 'Ubicaciones', 'Manual placements · solo Facebook e Instagram', 0],
+  ['Identity', 'Página e Instagram de los anuncios', '@intermiamicf_academy', 0],
+  ['Format', 'Formato', 'Single image or video', 0],
+  ['Multi-advertiser ads', 'Anuncios de varios anunciantes', 'Desmarcar', 0],
+  ['Advantage+ creative', 'Mejoras automáticas', 'Todo Off (en cada anuncio)', 0],
+];
+
 const ADS = [
  {n:'01', idi:'EN', cre:'VIDEO', arch:'01_VIDEO_EN.mp4', port:'01_VIDEO_EN_portada.jpg', vista:'01_VIDEO_EN_vista.mp4', utm:'video_en',
   txt:'This winter break, train where Inter Miami trains ⚽💗\n4 days with official Inter Miami CF coaches at the Florida Blue Training Center.\n📅 Dec 27–30 · Fort Lauderdale\n👦👧 Boys & girls 6–16\nRegister now 👇',
@@ -215,9 +238,10 @@ const ADS = [
 ];
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const btnCopiar = t => `<button class="copiar" type="button" data-copia="${esc(t)}">Copiar</button>`;
-const campo = (es, en, t) => `<div class="campo"><div class="cab"><b>${es} <em>· ${en}</em></b>${btnCopiar(t)}</div><pre>${esc(t)}</pre></div>`;
+const campo = (es, en, t) => `<div class="campo"><div class="cab"><b>${en} <em>· ${es}</em></b>${btnCopiar(t)}</div><pre>${esc(t)}</pre></div>`;
 
-document.getElementById('datos').innerHTML = COMUNES.map(([es, en, v]) => `<div class="dato"><b>${es}<em>${en}</em></b><span>${esc(v)}</span>${btnCopiar(v.replace(' (Registrarte)', ''))}</div>`).join('');
+document.getElementById('datos').innerHTML = COMUNES.map(([en, es, v]) => `<div class="dato"><b>${en}<em>${es}</em></b><span>${esc(v)}</span>${btnCopiar(v.replace('Inter Miami Camps Pixel · ', ''))}</div>`).join('');
+document.getElementById('config').innerHTML = CONFIG.map(([en, es, v, c]) => `<div class="dato"><b>${en}<em>${es}</em></b><span>${esc(v)}</span>${c ? btnCopiar(v) : '<span></span>'}</div>`).join('');
 document.getElementById('menu').insertAdjacentHTML('beforeend', ADS.map(a => `<a href="#ad${a.n}" data-n="${a.n}">${a.n} · ${a.cre} ${a.idi}</a>`).join(''));
 const RTG_ADS = [
  {
